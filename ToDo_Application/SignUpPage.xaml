@@ -6,20 +6,25 @@
 
     <VerticalStackLayout Padding="30" Spacing="15" VerticalOptions="Center">
         <Image Source="dotnet_bot.png" HeightRequest="150" BackgroundColor="LightGray" />
-        
+
         <Border Stroke="LightGray" StrokeThickness="1" Padding="10">
             <Border.StrokeShape><RoundRectangle CornerRadius="5"/></Border.StrokeShape>
-            <Entry Placeholder="User name" />
+            <Entry x:Name="firstNameEntry" Placeholder="User name" />
         </Border>
 
         <Border Stroke="LightGray" StrokeThickness="1" Padding="10">
             <Border.StrokeShape><RoundRectangle CornerRadius="5"/></Border.StrokeShape>
-            <Entry Placeholder="Email address" Keyboard="Email" />
+            <Entry x:Name="emailEntry" Placeholder="Email address" Keyboard="Email" />
         </Border>
 
         <Border Stroke="LightGray" StrokeThickness="1" Padding="10">
             <Border.StrokeShape><RoundRectangle CornerRadius="5"/></Border.StrokeShape>
-            <Entry Placeholder="Password" IsPassword="True" />
+            <Entry x:Name="passwordEntry" Placeholder="Password" IsPassword="True" />
+        </Border>
+
+        <Border Stroke="LightGray" StrokeThickness="1" Padding="10">
+            <Border.StrokeShape><RoundRectangle CornerRadius="5"/></Border.StrokeShape>
+            <Entry x:Name="confirmPasswordEntry" Placeholder="Confirm Password" IsPassword="True" />
         </Border>
 
         <Button Text="Sign up" Clicked="OnSignUpClicked" BackgroundColor="#A799E6" TextColor="White" />
